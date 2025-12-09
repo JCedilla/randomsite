@@ -1,15 +1,15 @@
 // --- CUSTOMIZE HERE ---
 const compliments = [
-    "You're gorgeous! 😍",
-    "Smartest person I know 🧠",
-    "My favorite human 🌎",
-    "You light up the room ✨",
-    "10/10 would date again 🔥",
-    "Kindest soul ❤️",
-    "Funny as hell 😂",
-    "Proud of you! 🌟",
-    "Queen 👑",
-    "Beautiful inside & out 🌹"
+    "my gorgeous baby! ",
+    "Smartest person I know ",
+    "My favorite human",
+    "You light up the room ",
+    "my goat",
+    "Kindest soul oat",
+    "Funny bebi",
+    "Proud of you! ",
+    "my queen ",
+    "Beautiful inside & out "
 ];
 
 const emojis = ["❤️", "💖", "🔥", "✨", "🌸", "🦋", "😻"];
