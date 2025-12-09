@@ -1,0 +1,65 @@
+/* General setup for the page */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Gradient Background - change colors here */
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Prevents scrollbars when things fall */
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* The Button Style */
+#hypeButton {
+    background-color: #fff;
+    color: #ff6b6b;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.1s, box-shadow 0.1s;
+    z-index: 10; /* Keeps button on top of the rain */
+}
+
+#hypeButton:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* The Falling Items Style */
+.falling-item {
+    position: absolute;
+    top: -50px; /* Start above screen */
+    pointer-events: none; /* Let clicks pass through them */
+    animation: fall linear forwards;
+    font-weight: bold;
+}
+
+/* The Falling Animation - UPDATED (No Rotation) */
+@keyframes fall {
+    0% { 
+        /* Start at top, visible */
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+    100% { 
+        /* End at bottom, invisible */
+        transform: translateY(110vh); 
+        opacity: 0; 
+    }
+}
